@@ -294,7 +294,7 @@ p {
     flex-wrap: wrap;
 }
 
-.solutions_item {
+.solutions__item {
     width: 450px;
     padding: 24px 34px 48px 24px;
     border: 1px solid rgba(132, 84, 245, 0.40);
@@ -344,32 +344,32 @@ p {
     transition: all linear .3s;
 }
 
-.solutions_item:hover {
+.solutions__item:hover {
     background-color: var(--secondary__clr);
 }
 
-.solutions_item:hover .icon__box {
+.solutions__item:hover .icon__box {
     background-color: rgba(251, 251, 254, 0.15);
 }
 
-.solutions_item:hover .icon__box i {
+.solutions__item:hover .icon__box i {
     color: #FCFCFE;
 }
 
-.solutions_item:hover .solu__item__heading h3 {
+.solutions__item:hover .solu__item__heading h3 {
     color: #FCFCFE;
 }
 
-.solutions_item:hover .solu__item__heading h3 {
+.solutions__item:hover .solu__item__heading h3 {
     color: #FCFCFE;
 }
 
-.solutions_item:hover .paragraph-opacity {
+.solutions__item:hover .paragraph-opacity {
     color: #FCFCFE;
 }
 
 
-.solutions_item:hover .title--color {
+.solutions__item:hover .title--color {
     color: #FCFCFE;
 }
 
@@ -378,11 +378,58 @@ p {
     ================================= */
 
 /* ==================================
-            Navbar Part Start
+            Goal Part Start
     ================================= */
+#goal {
+    padding: 183px 0 228px;
+    position: relative;
+}
+
+#goal::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 35%;
+    height: 733px;
+    border-radius: 0px 150px 150px 0px;
+    background: rgba(98, 62, 185, 0.05);
+    z-index: -1;
+}
+
+.gaol__wrapper {
+    display: flex;
+    column-gap: 120px;
+    align-items: center;
+}
+
+.goal__img {
+    margin-left: 53px;
+    width: 488px;
+    overflow: hidden;
+}
+
+.goal__img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.goal__content {
+    width: 689px;
+    margin-right: 60px;
+}
+
+.goal__content .paragraph {
+    opacity: 0.7;
+    padding: 24px 0 48px;
+}
+
 /* ==================================
-            Navbar Part End
+            Goal Part End
     ================================= */
+
+
 /* ==================================
             Navbar Part Start
     ================================= */
