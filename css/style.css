@@ -1,3 +1,13 @@
+:root {
+    --primary__crl: #29313D;
+    --secondary__clr: #8454F5;
+    --white: #fff;
+}
+
+/* 
+font-family: 'Nunito', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+
 /* ==================================
             Common Code Start
     ================================= */
@@ -28,22 +38,75 @@ p {
     line-height: 0.8;
 }
 
-.container{
-    width: ;
+.container {
+    width: 1410px;
     margin: 0 auto;
 }
 
+.commonbtn {
+    padding: 14px 28px;
+    color: var(--white);
+    background-color: var(--secondary__clr);
+    border-radius: 18px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 200%;
+    text-transform: capitalize;
+    transition:  all linear .3s;
+}
+
+.commonbtn:hover{
+    transform: scale(1.03);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 /* ==================================
             Common Code End
     ================================= */
 
-
-
-
-
 /* ==================================
             Navbar Part Start
     ================================= */
+#navbar {
+    padding: 30px 0;
+    background-color: rgb(13, 13, 216)0, 255, 128);
+}
+
+.nav_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+    width: 20%;
+}
+
+.nav__menu {
+    width: 60%;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 74px;
+}
+
+.nav_link {
+    color: var(--primary__crl);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.nav_btn {
+    width: 20%;
+    text-align: end;
+}
+
 /* ==================================
             Navbar Part End
     ================================= */
