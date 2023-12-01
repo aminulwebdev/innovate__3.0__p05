@@ -431,11 +431,71 @@ p {
 
 
 /* ==================================
-            Navbar Part Start
+            List Part Start
     ================================= */
+#list {
+    padding: 80px 0 120px;
+}
+
+.list__btn__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 24px;
+    background: rgba(219, 204, 252, 0.20);
+    margin-bottom: 120px;
+}
+
+.paragraph--btn {
+    padding: 26px 63px;
+    border: none;
+    background-color: transparent;
+    border-radius: 18px;
+    color: var(--secondary__clr);
+    font-weight: 600;
+    line-height: 140%;
+    cursor: pointer;
+    transition: all linear .3s;
+}
+
+.paragraph--btn:hover {
+    background-color: var(--secondary__clr);
+    color: var(--white);
+}
+
+.list__wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 155px;
+}
+
+.list__img {
+    width: 542px;
+    overflow: hidden;
+    margin-left: 49px;
+}
+
+.list__img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.list__content {
+    width: 664px;
+
+}
+
+.list__content .paragraph {
+    width: 575px;
+    opacity: 0.7;
+    padding: 24px 0 48px;
+}
+
+
 /* ==================================
-            Navbar Part End
+            List Part End
     ================================= */
+
 /* ==================================
             Navbar Part Start
     ================================= */
