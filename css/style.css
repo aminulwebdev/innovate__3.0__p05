@@ -75,7 +75,7 @@ p {
 }
 
 .paragraph.effect {
-    padding-left: 20px;
+    padding-left: 22px;
     position: relative;
 }
 
@@ -90,6 +90,24 @@ p {
 
 }
 
+.heading {
+    color: var(--primary__crl);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 140%;
+    text-transform: capitalize;
+}
+
+.title {
+    color: var(--primary__crl);
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 100%;
+    text-transform: capitalize;
+    transition: all linear .3s;
+}
 
 /* ==================================
             Common Code End
@@ -248,10 +266,115 @@ p {
     ================================= */
 
 /* ==================================
-            Navbar Part Start
+            Solutions Part Start
     ================================= */
+#solutions {
+    padding: 120px 0;
+}
+
+.solutions__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 80px;
+}
+
+.heading--width {
+    width: 564px;
+}
+
+.paragraph--wth {
+    width: 653px;
+}
+
+.solutions__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.solutions_item {
+    width: 450px;
+    padding: 24px 34px 48px 24px;
+    border: 1px solid rgba(132, 84, 245, 0.40);
+    border-radius: 30px;
+    transition: all linear .3s;
+    /* cursor: pointer; */
+}
+
+
+
+.solu__item__heading {
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+}
+
+.icon__box {
+    width: 70px;
+    height: 70px;
+    background-color: rgba(254, 195, 93, 0.15);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all linear .3s;
+}
+
+.icon__box i {
+    font-size: 30px;
+    color: #FEC35F;
+    transition: all linear .3s;
+}
+
+.solu__item__heading h3 {
+    color: var(--primary__crl);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 140%;
+    text-transform: capitalize;
+    transition: all linear .3s;
+}
+
+.paragraph-opacity {
+    opacity: 0.7;
+    padding: 16px 0 24px;
+    transition: all linear .3s;
+}
+
+.solutions_item:hover {
+    background-color: var(--secondary__clr);
+}
+
+.solutions_item:hover .icon__box {
+    background-color: rgba(251, 251, 254, 0.15);
+}
+
+.solutions_item:hover .icon__box i {
+    color: #FCFCFE;
+}
+
+.solutions_item:hover .solu__item__heading h3 {
+    color: #FCFCFE;
+}
+
+.solutions_item:hover .solu__item__heading h3 {
+    color: #FCFCFE;
+}
+
+.solutions_item:hover .paragraph-opacity {
+    color: #FCFCFE;
+}
+
+
+.solutions_item:hover .title--color {
+    color: #FCFCFE;
+}
+
 /* ==================================
-            Navbar Part End
+            Solutions Part End
     ================================= */
 
 /* ==================================
