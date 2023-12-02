@@ -2,6 +2,7 @@
     --primary__crl: #29313D;
     --secondary__clr: #8454F5;
     --white: #fff;
+    --orange: #FEC35F;
 }
 
 /* 
@@ -532,6 +533,7 @@ p {
     border-radius: 50px;
     background-color: var(--secondary__clr);
     position: relative;
+    cursor: pointer;
 }
 
 .plan__swap__btn::after {
@@ -655,6 +657,116 @@ p {
     ================================= */
 
 
+/* ==================================
+            Counter Part Start
+    ================================= */
+#counter {
+    padding: 70px 0;
+}
+
+.counter__main {
+    display: flex;
+    align-items: center;
+    column-gap: 228px;
+}
+
+.counter__icon {
+    display: flex;
+    align-items: center;
+    column-gap: 28px;
+    margin-left: 35px;
+}
+
+.counter__icon h5 {
+    color: #545A64;
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 120%;
+    text-transform: capitalize;
+}
+
+.counter__play__btn {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: var(--orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.counter__play__btn::after {
+    position: absolute;
+    top: -24px;
+    left: -24px;
+    content: url(../images/counter_shape.png);
+}
+
+.counter__play__btn i {
+    font-size: 50px;
+    color: #F8FAFC;
+}
+
+.counter__wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 128px;
+}
+
+.counter__item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    position: relative;
+}
+
+.counter__item::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: -48px;
+    transform: translateY(-50%);
+    opacity: 0.2;
+    background: #29313D;
+    width: 2px;
+    height: 100px;
+}
+
+.counter__item:last-child::after {
+    content: unset;
+}
+
+.counter__item h3 {
+    color: var(--primary__crl);
+    /* text-align: center; */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 140%;
+    /* 89.6px */
+    text-transform: capitalize;
+}
+
+
+.paragraph-widthopci {
+    width: 185px;
+    opacity: 0.8;
+}
+
+/* ==================================
+            Counter Part End
+    ================================= */
+
+
+
+/* ==================================
+            Navbar Part Start
+    ================================= */
+/* ==================================
+            Navbar Part End
+    ================================= */
 /* ==================================
             Navbar Part Start
     ================================= */
