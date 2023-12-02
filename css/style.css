@@ -762,11 +762,199 @@ p {
 
 
 /* ==================================
-            Navbar Part Start
+            Team Part Start
     ================================= */
+#team {
+    margin: 140px 0;
+    position: relative;
+}
+
+.team__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.team__img {
+    width: 450px;
+    height: 520px;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.team__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.paragraph--tweak {
+    font-size: 20px;
+    width: 446px;
+    opacity: 0.8;
+    line-height: 180%;
+}
+
+.team__content h3 {
+    color: var(--primary__crl);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 180%;
+    /* 64.8px */
+    text-transform: capitalize;
+    padding: 20px 0 14px;
+}
+
+.team__social {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+}
+
+.team__social__icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid var(--secondary__clr);
+    transition: all linear .3s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.team__social__icon i {
+    font-size: 14px;
+    color: var(--secondary__clr);
+    transition: all linear .3s;
+}
+
+.team__social__icon:hover {
+    background-color: var(--secondary__clr);
+}
+
+.team__social__icon:hover i {
+    color: var(--white);
+}
+
+.team__navigator {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+    padding-top: 56px;
+}
+
+.prev,
+.next {
+    width: 64px;
+    height: 64px;
+    border-radius: 10px;
+    background: #F3EEFE;
+    transition: all linear .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.prev i,
+.next i {
+    font-size: 18px;
+    color: #130F26;
+    transition: all linear .3s;
+}
+
+.prev:hover,
+.next:hover {
+    background: var(--secondary__clr);
+}
+
+.prev:hover i,
+.next:hover i {
+    color: var(--white);
+}
+
+.team__members {
+    width: 368px;
+    height: 480px;
+    position: relative;
+}
+
+.team__members__img {
+    width: 136px;
+    height: 136px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 16px;
+}
+
+.team__members__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team__members__img:nth-child(2) {
+    top: 20px;
+    right: 16px;
+    width: 82px;
+    height: 82px;
+    border-radius: 15px;
+}
+
+.team__members__img:nth-child(2) {
+    top: 40px;
+    right: 16px;
+    width: 82px;
+    height: 82px;
+    border-radius: 15px;
+}
+
+.team__members__img:nth-child(3) {
+    top: 80px;
+    right: 164px;
+    width: 109px;
+    height: 109px;
+    border-radius: 20px;
+}
+
+.team__members__img:nth-child(4) {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 68px;
+    height: 68px;
+    border-radius: 14px;
+}
+
+.team__members__img:nth-child(5) {
+    top: 380px;
+    left: 90px;
+    width: 68px;
+    height: 68px;
+    border-radius: 14px;
+}
+
+.team__members__img:nth-child(6) {
+    top: 430px;
+    right: -40px;
+    width: 82px;
+    height: 82px;
+    border-radius: 15px;
+}
+
 /* ==================================
-            Navbar Part End
+            Team Part End
     ================================= */
+
+
+
 /* ==================================
             Navbar Part Start
     ================================= */
