@@ -168,9 +168,6 @@ p {
             Navbar Part End
     ================================= */
 
-
-
-
 /* ==================================
             Banner Part Start
     ================================= */
@@ -610,10 +607,11 @@ p {
     transition: all linear .3s;
 }
 
-.paragraph--color {
+.paragraph--alter {
     color: #545A64;
     line-height: 120%;
     transition: all linear .3s;
+    font-size: 20px;
 }
 
 .plan__package__value {
@@ -646,7 +644,7 @@ p {
 
 .plan__item:hover .plan__package__name,
 .plan__item:hover .plan__package__list i,
-.plan__item:hover .paragraph--color,
+.plan__item:hover .paragraph--alter,
 .plan__item:hover .paragraph--value {
     color: #F8FAFC;
 }
@@ -711,6 +709,7 @@ p {
 .counter__play__btn i {
     font-size: 50px;
     color: #F8FAFC;
+    cursor: pointer;
 }
 
 .counter__wrapper {
@@ -771,6 +770,11 @@ p {
 #team {
     margin: 140px 0;
     position: relative;
+}
+
+.heading--tweak {
+    width: 689px;
+    padding-bottom: 90px;
 }
 
 .team__wrapper {
@@ -1098,3 +1102,122 @@ footer {
 /* ==================================
             Footer Part End
     ================================= */
+
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+/* ==================================
+                Shapes Part Start
+        ================================= */
+.shape__one {
+    position: absolute;
+    top: 11%;
+    right: 0;
+    width: 797px;
+    height: 797px;
+    z-index: -1;
+}
+
+.shape__two {
+    position: absolute;
+    top: 17%;
+    left: 0;
+    width: 797px;
+    height: 797px;
+    z-index: -1;
+}
+
+.shape__three {
+    position: absolute;
+    top: 26%;
+    left: 19%;
+    width: 797px;
+    height: 797px;
+    z-index: -1;
+}
+
+.shape__four {
+    position: absolute;
+    top: 32%;
+    right: 0;
+    width: 797px;
+    height: 797px;
+    z-index: -1;
+}
+
+.shape__five {
+    position: absolute;
+    top: 43%;
+    left: 4%;
+    width: 797px;
+    height: 797px;
+    z-index: -1;
+}
+
+.shape__six {
+    position: absolute;
+    top: 57%;
+    right: 0;
+    width: 797px;
+    height: 797px;
+    z-index: -1;
+}
+
+.shape__seven {
+    position: absolute;
+    top: 55%;
+    left: 0;
+    width: 797px;
+    height: 797px;
+    z-index: -1;
+}
+
+.shape__eight {
+    position: absolute;
+    top: 74%;
+    left: 8%;
+    width: 797px;
+    height: 797px;
+    z-index: -1;
+}
+
+.shape__nine {
+    position: absolute;
+    top: 81%;
+    right: 0;
+    width: 797px;
+    height: 797px;
+    z-index: -1;
+}
+
+.shape__ten {
+    position: absolute;
+    bottom: 0;
+    left: -16%;
+    width: 797px;
+    height: 560px;
+    z-index: -1;
+}
+
+.shape__eleven {
+    position: absolute;
+    bottom: 0;
+    right: -16%;
+    width: 797px;
+    height: 465px;
+    z-index: -1;
+
+}
+
+.shape__size {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ==================================
+                Shapes Part End
+        ================================= */
