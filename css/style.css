@@ -956,6 +956,76 @@ p {
 
 
 /* ==================================
+            Newsletter Part Start
+    ================================= */
+#newsletter {
+    padding: 140px 0;
+}
+
+.heading--align {
+    text-align: center;
+    width: 820px;
+    margin: 0 auto;
+}
+
+.newsletter__offer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 37px;
+    padding: 28px 0 48px;
+}
+
+.newsletter__offer span {
+    color: var(--primary__crl);
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 180%;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.newsletter__offer span::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    right: -18px;
+    background-color: var(--primary__crl);
+    width: 2px;
+    height: 18px;
+    border-radius: 5px;
+}
+
+.newsletter__offer span:last-child:after {
+    content: unset;
+}
+
+.newsletter__form {
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter__form input {
+    width: 521px;
+    height: 80px;
+    background-color: red;
+    border: none;
+    outline: none;
+    padding: 24px;
+    border-radius: 18px;
+    background: #F3EEFE;
+    line-height: 180%;
+}
+
+/* ==================================
+            Newsletter Part End
+    ================================= */
+
+/* ==================================
             Navbar Part Start
     ================================= */
 /* ==================================
