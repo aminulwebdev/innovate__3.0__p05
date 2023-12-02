@@ -491,17 +491,170 @@ p {
     padding: 24px 0 48px;
 }
 
-
 /* ==================================
             List Part End
     ================================= */
 
 /* ==================================
-            Navbar Part Start
+            Plan Part Start
     ================================= */
+#plan {
+    padding: 120px 0 164px;
+}
+
+.plan__heading .heading {
+    width: 689px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.plan__swap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    padding-top: 30px;
+}
+
+.plan__swap__item {
+    color: var(--primary__crl);
+    font-family: 'Nunito', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 100%;
+    text-transform: capitalize;
+    opacity: 0.8;
+}
+
+.plan__swap__btn {
+    width: 70px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: var(--secondary__clr);
+    position: relative;
+}
+
+.plan__swap__btn::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    left: 7px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: var(--white);
+}
+
+
+
+.plan__wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+
+.plan__item {
+    width: 450px;
+    background-color: var(--white);
+    border-radius: 30px;
+    padding: 48px;
+    transition: all linear .3s;
+    cursor: pointer;
+    margin-top: 160px;
+}
+
+.plan__package__name {
+    color: var(--primary__crl);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 140%;
+    text-transform: capitalize;
+    transition: all linear .3s;
+}
+
+.plan__package__details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 48px 0;
+}
+
+.plan__package__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 28px;
+}
+
+.plan__package__list li {
+    display: flex;
+    column-gap: 14px;
+    align-items: center;
+}
+
+.plan__package__list i {
+    font-size: 18px;
+    color: #545A64;
+    transition: all linear .3s;
+}
+
+.paragraph--color {
+    color: #545A64;
+    line-height: 120%;
+    transition: all linear .3s;
+}
+
+.plan__package__value {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 28px;
+
+}
+
+.paragraph--value {
+    font-weight: 700;
+    color: var(--secondary__clr);
+    line-height: 120%;
+    transition: all linear .3s;
+
+}
+
+.commonbtn--color {
+    background: rgba(132, 84, 245, 0.10);
+    color: var(--secondary__clr);
+    transition: all linear .3s;
+}
+
+.plan__item:hover {
+    margin-top: 0px;
+    background: #181059;
+}
+
+.plan__item:hover .plan__package__name,
+.plan__item:hover .plan__package__list i,
+.plan__item:hover .paragraph--color,
+.plan__item:hover .paragraph--value {
+    color: #F8FAFC;
+}
+
+.plan__item:hover .commonbtn--color {
+    color: var(--white);
+    background-color: var(--secondary__clr);
+}
+
 /* ==================================
-            Navbar Part End
+            Plan Part End
     ================================= */
+
+
 /* ==================================
             Navbar Part Start
     ================================= */
