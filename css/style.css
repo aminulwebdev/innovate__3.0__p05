@@ -88,7 +88,6 @@ p {
     width: 6px;
     height: 100%;
     background-color: #FFC556;
-
 }
 
 .heading {
@@ -146,13 +145,31 @@ p {
     column-gap: 74px;
 }
 
-.nav_link {
+.nav__link {
     color: var(--primary__crl);
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-weight: 600;
     line-height: normal;
     text-transform: capitalize;
+    position: relative;
+}
+
+.nav__link::after {
+    position: absolute;
+    content: "";
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 3px;
+    background-color: var(--secondary__clr);
+    border-radius: 5px;
+    transition: all linear .3s;
+}
+
+.nav__link:hover::after {
+    width: 60%;
 }
 
 .nav_btn {
@@ -210,7 +227,7 @@ p {
     margin-top: 52px;
     background-color: #29313D;
     border-radius: 24px;
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
     background: rgba(132, 84, 245, 0.05);
 }
@@ -223,14 +240,19 @@ p {
     border: none;
 }
 
+.banner__form__input:focus-visible {
+    outline: 1px solid var(--secondary__clr);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
 .banner__form__btn {
     position: absolute;
     right: 15px;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-
 
 .banner__img {
     width: 689px;
@@ -304,8 +326,6 @@ p {
     transition: all linear .3s;
     /* cursor: pointer; */
 }
-
-
 
 .solu__item__heading {
     display: flex;
@@ -549,16 +569,12 @@ p {
     background-color: var(--white);
 }
 
-
-
 .plan__wrapper {
     display: flex;
     align-items: center;
     column-gap: 30px;
     flex-wrap: wrap;
 }
-
-
 
 .plan__item {
     width: 450px;
@@ -658,7 +674,6 @@ p {
             Plan Part End
     ================================= */
 
-
 /* ==================================
             Counter Part Start
     ================================= */
@@ -710,6 +725,11 @@ p {
     font-size: 50px;
     color: #F8FAFC;
     cursor: pointer;
+    transition: all linear .3s;
+}
+
+.counter__play__btn i:hover {
+    transform: scale(1.1);
 }
 
 .counter__wrapper {
@@ -748,10 +768,8 @@ p {
     font-size: 64px;
     font-weight: 600;
     line-height: 140%;
-    /* 89.6px */
     text-transform: capitalize;
 }
-
 
 .paragraph-widthopci {
     width: 185px;
@@ -761,8 +779,6 @@ p {
 /* ==================================
             Counter Part End
     ================================= */
-
-
 
 /* ==================================
             Team Part Start
@@ -781,7 +797,6 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .team__img {
@@ -810,7 +825,6 @@ p {
     font-size: 36px;
     font-weight: 600;
     line-height: 180%;
-    /* 64.8px */
     text-transform: capitalize;
     padding: 20px 0 14px;
 }
@@ -832,7 +846,6 @@ p {
     align-items: center;
     justify-content: center;
 }
-
 
 .team__social__icon i {
     font-size: 14px;
@@ -961,8 +974,6 @@ p {
             Team Part End
     ================================= */
 
-
-
 /* ==================================
             Newsletter Part Start
     ================================= */
@@ -1027,6 +1038,11 @@ p {
     border-radius: 18px;
     background: #F3EEFE;
     line-height: 180%;
+}
+
+.newsletter__form input:focus-visible {
+    outline: 1px solid var(--secondary__clr);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .newsletter__form button {
@@ -1102,12 +1118,10 @@ footer {
 /* ==================================
             Footer Part End
     ================================= */
-
 body {
     position: relative;
     overflow-x: hidden;
 }
-
 
 /* ==================================
                 Shapes Part Start
