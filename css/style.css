@@ -45,7 +45,7 @@ p {
 }
 
 .commonbtn {
-    padding: 14px 28px;
+    padding: 20px 48px;
     color: var(--white);
     background-color: var(--secondary__clr);
     border-radius: 18px;
@@ -158,6 +158,10 @@ p {
 .nav_btn {
     width: 20%;
     text-align: end;
+}
+
+.commonbtn--padding {
+    padding: 14px 28px;
 }
 
 /* ==================================
@@ -1021,13 +1025,76 @@ p {
     line-height: 180%;
 }
 
+.newsletter__form button {
+    cursor: pointer;
+}
+
 /* ==================================
             Newsletter Part End
     ================================= */
 
 /* ==================================
-            Navbar Part Start
+            Footer Part Start
     ================================= */
+footer {
+    padding: 140px 0 57px;
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.paragraph--enhance {
+    width: 449px;
+    padding-top: 44px;
+}
+
+.footer__list__wrapper {
+    display: flex;
+    column-gap: 180px;
+}
+
+.footer__content h5 {
+    color: var(--primary_clr);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    text-transform: capitalize;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding-top: 48px;
+}
+
+.footer__item {
+    color: var(--primary_clr);
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    text-transform: capitalize;
+}
+
+.footer__copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 80px;
+}
+
+.footer__policy {
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+}
+
 /* ==================================
-            Navbar Part End
+            Footer Part End
     ================================= */
